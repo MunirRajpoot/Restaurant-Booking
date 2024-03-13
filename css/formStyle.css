@@ -30,6 +30,8 @@
 .n-field {
     height: 2.5rem;
     outline: none;
+    margin: 0px;
+    width: 85%;
     border: 0.3px solid rgb(190, 190, 190);
 }
 

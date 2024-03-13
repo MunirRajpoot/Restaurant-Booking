@@ -87,19 +87,28 @@
 
                                 </li>
                                 <li class="nav-item me-4 dropdown">
-                                    <a class="nav-link fs-5" href="#">
+                                    <a class="nav-link fs-5" href="./contact.html">
                                         Contact
                                     </a>
 
                                 </li>
                                 <li class="nav-item me-4 dropdown">
-                                    <a class="nav-link fs-5" href="#">
+                                    <a class="nav-link fs-5" href="./About.html">
                                         About
                                     </a>
-
                                 </li>
 
-
+                                <li class="nav-item me-4 dropdown">
+                                    <a class="nav-link fs-5" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Pages
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-light">
+                                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                                        <li><a class="dropdown-item" href="#">Lorem</a></li>
+                                    </ul>
+                                </li>
                             </ul>
 
                             <div class="d-flex gap-2">
@@ -139,7 +148,7 @@
                             </svg>
                         </button>
                     </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 mt-md-4 mt-sm-4">
+                    <div id="first-img" class="col-lg-6 col-md-12 col-sm-12 mt-md-4 mt-sm-4">
                         <img src="https://dummyimage.com/500x350/f5f2f5/fff" style="width: 100%;" alt="img">
                     </div>
 
@@ -178,7 +187,7 @@
     </div>
     <!-- Contact  -->
 
-    <div id="cont-sec" class="d-flex justify-content-around align-items-center bg-light rounded-2"
+    <div id="cont-sec" class="d-flex justify-content-around align-items-center bg-light rounded-2 flex-wrap"
         style="margin-bottom: 100px;">
         <div>
             <h1>Need any Contact with US</h1>
@@ -223,7 +232,7 @@
                             <select name="day" id="Days" class="d-block w-100 mt-2" style="outline: none; border:none;">
                                 <option value="Monday">Monday</option>
                                 <option value="Tuesday">Tuesday</option>
-                                <option value="Wednessday">Wednessday</option>
+                                <option value="Wednesday">Wednesday</option>
                                 <option value="Thursday">Thursday</option>
                                 <option value="Friday">Friday</option>
                                 <option value="Saturday">Saturday</option>
@@ -369,22 +378,43 @@
     <!-- Offcanvas -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-           <div class="d-flex">
-            <img src="https://dummyimage.com/55x30/f5f2f5/fff" alt="logo">
-            <h5 class="offcanvas-title ms-2" id="offcanvasRightLabel">Offcanvas right</h5>
-           </div>
+            <div class="d-flex">
+                <img src="https://dummyimage.com/55x30/f5f2f5/fff" alt="logo">
+                <h5 class="offcanvas-title ms-2" id="offcanvasRightLabel">Offcanvas right</h5>
+            </div>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <ul>
-                <li class="list-unstyled"><a href="#" class="text-black text-decoration-none">Home</a></li>
-                <li class="list-unstyled"><a href="#" class="text-black text-decoration-none">Booking</a></li>
-                <li class="list-unstyled"><a href="#" class="text-black text-decoration-none">Contact</a></li>
-                <li class="list-unstyled"><a href="#" class="text-black text-decoration-none">About</a></li>
+
+
+                <li class="list-unstyled">
+                    <!-- <svg class="mb-2" style="height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path
+                            d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+                    </svg> -->
+
+                    <a href="#" class="text-black text-decoration-none fs-5">Home</a>
+                </li>
+
+
+                <hr>
+                <li class="list-unstyled"><a href="#" class="text-black text-decoration-none fs-5">Booking</a></li>
+                <hr>
+                <li class="list-unstyled">
+                    <!-- <svg class="mb-2" style="height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path
+                            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 256h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm-32-96a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zm256-32H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+                    </svg> -->
+                    <a href="#" class="text-black text-decoration-none fs-5">Contact</a>
+                </li>
+                <hr>
+                <li class="list-unstyled"><a href="#" class="text-black text-decoration-none fs-5">About</a>
+                </li>
+                <hr>
             </ul>
         </div>
     </div>
-
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./jquery-3.7.1.min.js"></script>
     <script>
